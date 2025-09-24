@@ -1,2 +1,7 @@
 # master-repo
-Main repository. 
+
+TEAM NAME:
+
+PRODUCT NAME:
+
+DESCRIPTION:
