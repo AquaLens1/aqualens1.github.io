@@ -1,6 +1,6 @@
 # AquaLens
 Name of the project: AquaLens  
-Team Members: Zakaria Amara (), Myriam Gallant-Blais (), Kathryn McSheffery (), Lucas Rawle (), Paco Situ (), Aditi Valmiki ()  
+Team Members: Zakaria Amara (), Myriam Gallant-Blais (300514327), Kathryn McSheffery (), Lucas Rawle (), Paco Situ (), Aditi Valmiki ()  
 [ADD STUDENT NUMBERS IN BRACKETS]  
 
 Product Name: AquaLens  
