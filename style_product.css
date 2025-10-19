@@ -1,0 +1,17 @@
+p{
+    color: #000066;
+    text-align: center;
+    font-family: "Monaco", monospace;
+}
+
+h1,h2{
+    color: #000066;
+    text-align: center;
+    font-family: "Papyrus", fantasy;
+}
+
+div {
+    background-color: rgba(51,153,255, 0.5);
+    padding: 25px 10px 25px 10px;
+    border-radius: 15px;
+}
