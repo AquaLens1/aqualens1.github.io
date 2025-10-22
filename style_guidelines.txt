@@ -1,0 +1,29 @@
+Overall Look and Feel of Aqualens
+===============================
+
+PLACEHOLDER
+
+Colours
+========
+PLACEHOLDERS!
+- #FFFFFF
+- #FFFFFF
+- #FFFFFF
+- #FFFFFF
+- #FFFFFF
+
+Iconography
+===========
+PLACEHOLDER!
+
+Typography
+==========
+We will be using Arial and Sans Serif from Google Fonts.
+
+Links
+=====
+PLACEHOLDER!
+
+Buttons
+=======
+PLACEHOLDER!
