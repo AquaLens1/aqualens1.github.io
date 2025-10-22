@@ -1,0 +1,37 @@
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style_price.css">
+        <title> Aqualens | Home</title>
+    </head>
+    
+    <body id="home-page">
+
+        <div id="navbar-container"></div>
+
+        <script>
+            fetch('../nav_bar/nav_bar.html')
+                .then(res => res.text())
+                .then(data => {
+                    document.getElementById('navbar-container').innerHTML = data;
+                });
+        </script>
+
+        <main>
+
+            <img src="../../images/Underwater.png" class="hero-image" />
+            
+            <h1>
+                Text here
+            </h1>
+            
+            <div class="button-container">
+                 <a href='../product/product.html' class='button'>Discover </a>
+            </div>
+
+        </main>
+            
+
+    </body>
+
+</html>
