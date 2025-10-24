@@ -4,8 +4,10 @@ margin: 0;
 padding: 0;
 height: 100%;
 width: 100%;
-font-family: Arial, sans-serif;
+font-family: Arial, Helvetica, sans-serif; /* added fallback font */
 overflow-x: hidden; /* prevent horizontal scroll */
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
 }
 
 /* Hero section, background image */
@@ -54,16 +56,19 @@ justify-content: center;
 overflow: visible;
 box-sizing: border-box;
 padding: 0 10px;
+text-align: center; /* added for consistent centering */
 }
 
 /* Heading styles (Main) */
 .hero h1 {
 font-size: 1.2rem; /* fixed font size */
-margin-bottom: 1em;
+margin: 0 0 1em 0; /* reset top margin */
 max-width: 100%;
 word-wrap: break-word;
 overflow-wrap: break-word;
 line-height: 1.4;
+font-weight: 600;
+text-align: center; /* added to ensure centering */
 }
 
 /* Button (Container) */
@@ -87,6 +92,7 @@ white-space: normal;
 box-sizing: border-box;
 display: inline-block;
 text-decoration: none;
+text-align: center; /* ensure consistent text centering */
 }
 
 /* Button (hover effect) */

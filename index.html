@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         
         <!-- Link CSS stylesheet -->
-        <link rel="stylesheet" type="text/css" href="index.css" />
+        <link rel="stylesheet" href="index.css" />
         
         <title> AquaLens | Home</title>
 
@@ -21,7 +21,7 @@
 
         <script>
             // Fetch Nav bar
-            fetch('../nav_bar/nav_bar.html')
+            fetch('src/nav_bar/nav_bar.html')
                 .then(res => res.text())
                 .then(data => {
                     document.getElementById('navbar-container').innerHTML = data;
