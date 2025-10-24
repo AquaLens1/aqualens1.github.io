@@ -13,7 +13,8 @@ overflow-x: hidden; /* prevent horizontal scroll */
 width: 100vw;
 height: 100vh;
 position: relative;
-background-image: url('../../images/Underwater.png');
+background-image: url('images/Underwater.png');
+background-color: #5e57c2; /* Fallback color */
 background-size: cover;
 background-position: center;
 display: flex;

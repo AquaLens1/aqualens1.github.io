@@ -1,49 +1,53 @@
+<!DOCTYPE html>
 
-<html>
+<html lang="en">
     <head>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <title> Aqualens | Home</title>
+
+        <meta charset="UTF-8" />
+        <!-- For size -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        <!-- Link CSS stylesheet -->
+        <link rel="stylesheet" type="text/css" href="index.css" />
+        
+        <title> AquaLens | Home</title>
+
     </head>
-    
+
     <body id="home-page">
-    
-        <div class="header">
-            
-            <h1>AquaLens</h1>
-            <div class="container">
-                <div class="logo">
-                    <!--href="home.html"-->
-                    <a href="https://youtu.be/dQw4w9WgXcQ">
-                        <img src="images/logo_placeholder.png" />
-                    </a>
+
+        <!-- Navigation Bar -->
+        <div id="navbar-container"></div>
+
+        <script>
+            // Fetch Nav bar
+            fetch('../nav_bar/nav_bar.html')
+                .then(res => res.text())
+                .then(data => {
+                    document.getElementById('navbar-container').innerHTML = data;
+                });
+        </script>
+
+        <!-- Main, background image set in CSS -->
+        <main class="hero">
+
+            <div class="overlay">
+
+                <!-- Content for text and button -->
+                <div class="content">
+
+                    <!-- Main heading / description -->
+                    <h1>
+                        Ever wondered what that cool fish you saw was? With AquaLens, you'll never have to ask yourself this question again. Our camera will tell you everything you want to know on the spot. Whether you're a marine biologist, a diver or simply an ocean lover, the AquaLens is made for you!
+                    </h1>
+
+                    <!-- Button -->
+                    <div class="button-container">
+                        <a href='src/product/product.html' class='button'> Discover </a>
+                    </div>
                 </div>
             </div>
-
-            <div class="navigation">
-                <a href="home.html">Home</a>
-                <a href="features.html">Features</a>
-                <a href="pricing.html">Pricing</a>
-                <a href="team.html">About us</a>
-                <a href="contact.html">Contact us</a>
-            </div>
-
-            <div class="clear-floats"></div>
-
-        </div>
-
-        <div class="content">
-
-            <img src="images/Underwater.png" class="hero-image" />
-
-            <h1>
-                AquaLens is an underwater device that can scan lifeform in the ocean and give a brief description about it. It is an essential object for divers looking to explore or just to avoid the spooky mysteries that are hidden in the vast ocean. Capable to wisthand great pressure and bad underwater conditions, AquaLens may be able to save your life or to help you identify sunken riches.
-            </h1>
-
-            <div class="button-container">
-                 <a href='features.html' class='button'>Browse Features </a>
-            </div>
-
-        </div>
+        </main>
 
     </body>
 
