@@ -6,13 +6,17 @@
 
 <style> 
 
-    /* Apply to all Navbar */
+
+    /* Apply to all Navbar and website? */
     body{
     margin: 0px; 
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
     }
 
+/* -------------------------
+    NAVIGATION BAR – desktop
+-------------------------- */
     /* Navbar styling */
     .navbar{ 
         position: sticky; /*Stays at the top*/
@@ -44,15 +48,8 @@
         display: block;  
     }
 
-    /* Title stays bold when on that page */
-    .navbar a.active {
-        background-color: #b9d5e7;
-        border-radius: 15px 15px 0px 0px ;
-        font-weight: bold;
-    }
-
-     /* Navbar title styling on hover */
-    .navbar li:hover{ 
+     /* Navbar title styling on hover and when active */
+    .navbar a.active, .navbar a:hover{ 
         background-color: #b9d5e7;
         border-radius: 15px 15px 0px 0px ;
     }
@@ -69,7 +66,7 @@
         width: 150px;
         height: 150px;
     }
-
+    /* Sizing of the hamburger img */
     .navbar img.menu-toggle {
         width: 60px;  
         height: 60px;
@@ -97,15 +94,32 @@
     .dropdown {
         display: none;
     }
+    /* Apply to all Footer */
+    body{
+    margin: 0px; 
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    }
+    /*Create space for the footer – Must be on each page or in global CSS*/
+    .content {
+        padding-bottom: 60px;
+        flex-grow: 1;
+    }
 
-    
+/* -------------------------
+    NAVIGATION BAR – Mobile
+ -------------------------- */
+
     /*Responsive (mobile) */
    @media (max-width: 768px) {
+
     /* Hamburger Menu (visible) */
     .menu-toggle {
         display: block;
     }
-    /* Menu Mobile */
 
     /* Dropdown menu mobile */
     .dropdown {
@@ -176,7 +190,7 @@
         <a href="src/contact_us/contact_us.html">CONTACT</a>
     </div>
 
-        <!-- Menu items -->
+    <!-- Menu items -->
     <ul>
         <li><a href="index.html"> HOME </a></li>
         <li><a href="src/product/product.html"> FEATURES </a></li>
@@ -187,7 +201,7 @@
 </nav>
 
 <script>
-const links = document.querySelectorAll('.navbar ul a');
+const links = document.querySelectorAll('.navbar a');
 links.forEach(link => {
     const linkFile = link.getAttribute('href').split('/').pop();
     const currentFile = window.location.pathname.split('/').pop();
@@ -195,11 +209,10 @@ links.forEach(link => {
     if (linkFile === currentFile) {
         link.classList.add('active');
     }
-});
+    });
 
 function toggleMenu() {
     const dropdown = document.getElementById('mobileDropdown');
     dropdown.classList.toggle('show'); 
-}
-
+    }   
 </script>
