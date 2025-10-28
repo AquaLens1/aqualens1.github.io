@@ -21,7 +21,8 @@
         background-color: rgb(218, 231, 239);
         display: flex;
         align-items: center;
-        justify-content: left;    
+        justify-content: left;  
+        
     }
 
      /* Navbar Elements styling */
@@ -104,7 +105,6 @@
     .menu-toggle {
         display: block;
     }
-
     /* Menu Mobile */
 
     /* Dropdown menu mobile */
@@ -163,7 +163,7 @@
 <nav class="navbar"> 
     <!-- Logo -->
     <a href="index.html" class="logo">
-        <img src="images/AquaLens-Logo.png" class="logo">
+        <img src="images/AquaLens-Logo.png">
     </a>
     <!-- Hamburger menu (on mobile) -->
     <img src="images/Hamburger_Menu_Nav_bar.png" class="menu-toggle" onclick="toggleMenu()">
@@ -177,14 +177,13 @@
     </div>
 
         <!-- Menu items -->
-    <ul id="navbarmenu">
+    <ul>
         <li><a href="index.html"> HOME </a></li>
         <li><a href="src/product/product.html"> FEATURES </a></li>
         <li><a href="src/pricing/pricing.html"> PRICING </a></li>
         <li><a href="src/team/team.html"> ABOUT US </a></li>
         <li><a href="src/contact_us/contact_us.html"> CONTACT </a></li>
     </ul>
-
 </nav>
 
 <script>
