@@ -1,23 +1,28 @@
 
 <style> 
+
+    /* Apply to all Navbar */
     body{
-        margin: 0px; 
-        padding: 0px;
+    margin: 0px; 
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
     }
+
+    /* Navbar styling */
     .navbar{ 
-        position: sticky;
+        position: sticky; /*Stays at the top*/
         top: 0;
         height: 150px;
         background-color: rgb(218, 231, 239);
         display: flex;
         align-items: center;
-        justify-content: left;
-        position:relative;
+        justify-content: left;  
         
     }
+
+     /* Navbar Elements styling */
     .navbar ul{ 
         list-style-type: none;
-        padding: px;
         margin: 0px;
         overflow: hidden;
         padding-right: 40px;
@@ -25,38 +30,146 @@
         bottom: 0px;
         right: 0px;
         display: flex;
-
     }
+    /* Styling des liens */
     .navbar a{ 
         color: #004e7a;
         text-decoration: none;
         padding: 15px;
         display: block;  
     }
-    .navbar li:hover{ 
+
+    /* Title stays bold when on that page */
+    .navbar a.active {
         background-color: #b9d5e7;
-        transform: scale(1.1);
+        border-radius: 15px 15px 0px 0px ;
         font-weight: bold;
     }
+
+     /* Navbar title styling on hover */
+    .navbar li:hover{ 
+        background-color: #b9d5e7;
+        border-radius: 15px 15px 0px 0px ;
+    }
+
+     /* Navbar Titles */
     .navbar li{ 
         float: left; 
         margin-left: 10px;
     }
+
+    /* Logo */
     .navbar img{ 
         margin-left: 15px;
-        align-items: center;
         width: 150px;
         height: 150px;
-
     }
 
+    .navbar img.menu-toggle {
+        width: 60px;  
+        height: 60px;
+        object-fit: contain;
+    }
+    /* No effects on hamburger toggle */
+    .menu-toggle:hover {
+        background: none;    
+        transform: none;       
+    }
+
+    /* Hamburger hidden by default (desktop) */
+    .menu-toggle {
+        display: none; /* Hidden */
+        position: absolute;
+        bottom: 10px; 
+        right: 20px;
+        z-index: 1000;
+        width: 30px;
+        height: 30px; 
+        object-fit: contain;
+        cursor: pointer;
+    }
+
+    .dropdown {
+        display: none;
+    }
+
+    
+    /*Responsive (mobile) */
+   @media (max-width: 768px) {
+    /* Hamburger Menu (visible) */
+    .menu-toggle {
+        display: block;
+    }
+    /* Menu Mobile */
+
+    /* Dropdown menu mobile */
+    .dropdown {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        bottom: -200px; 
+        right: 10px;
+        background-color: rgb(218, 231, 239);
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        padding: 10px; 
+        z-index: 999;
+    }
+    .dropdown.show {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dropdown a {
+        padding: 10px 20px;
+        text-align: center;
+    }
+
+    .dropdown a:hover {
+        background-color: #b9d5e7;
+        border-radius: 8px;
+    }
+    
+    .navbar ul {
+        display: none;
+        position: fixed;    
+        top: 60px;          
+        right: -100%;        
+        flex-direction: column;
+        width: 100%;
+        background-color: rgb(218, 231, 239);
+        transition: right 0.3s ease;
+        z-index: 998;
+    }
+
+    .navbar ul.open {
+        right: 0;   /* Menu visible on click */
+        z-index: 999;
+    }
+
+    .navbar ul li {
+        text-align: center;
+        margin: 10px 0;
+    }
+}
 </style>
  
 <nav class="navbar"> 
-    <!-- Icon -->
-    <a href="../../index.html">
-        <img src="../../images/AquaLens-Logo.png"></a>
-    
+    <!-- Logo -->
+    <a href="../../index.html" class="logo">
+        <img src="../../images/AquaLens-Logo.png">
+    </a>
+    <!-- Hamburger menu (on mobile) -->
+    <img src="Hamburger_Menu_Nav_bar.png" class="menu-toggle" onclick="toggleMenu()">
+
+    <div class="dropdown" id="mobileDropdown">
+        <a href="../../index.html">HOME</a>
+        <a href="/src/product/product.html">FEATURES</a>
+        <a href="/src/pricing/pricing.html">PRICING</a>
+        <a href="/src/team/team.html">ABOUT US</a>
+        <a href="/src/contact_us/contact_us.html">CONTACT</a>
+    </div>
+
         <!-- Menu items -->
     <ul>
         <li><a href="../../index.html"> HOME </a></li>
@@ -66,3 +179,21 @@
         <li><a href="/src/contact_us/contact_us.html"> CONTACT </a></li>
     </ul>
 </nav>
+
+<script>
+const links = document.querySelectorAll('.navbar ul a');
+links.forEach(link => {
+    const linkFile = link.getAttribute('href').split('/').pop();
+    const currentFile = window.location.pathname.split('/').pop();
+
+    if (linkFile === currentFile) {
+        link.classList.add('active');
+    }
+});
+
+function toggleMenu() {
+    const dropdown = document.getElementById('mobileDropdown');
+    dropdown.classList.toggle('show'); 
+}
+
+</script>
