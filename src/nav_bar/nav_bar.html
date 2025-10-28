@@ -21,8 +21,7 @@
         background-color: rgb(218, 231, 239);
         display: flex;
         align-items: center;
-        justify-content: left;  
-        
+        justify-content: left;    
     }
 
      /* Navbar Elements styling */
@@ -98,6 +97,30 @@
         display: none;
     }
 
+    /* Footer styling */
+    .footer{ 
+        position: fixed;
+        bottom: 0;
+        height: 15px;
+        width: 100%;
+        background-color: rgb(218, 231, 239);
+        display: flex;
+        align-items: center;
+        justify-content: right;  
+        padding: 15px
+    }
+    /* Footer link styling */
+    .footer a{
+        color: #004e7a;
+        text-decoration: none;
+        padding: 15px;
+        display: block; 
+        padding-right: 40px;
+    }
+    /* Footer txt styling */
+    #copyright {
+        color: #004e7a;
+    }
     
     /*Responsive (mobile) */
    @media (max-width: 768px) {
@@ -163,10 +186,10 @@
 <nav class="navbar"> 
     <!-- Logo -->
     <a href="../../index.html" class="logo">
-        <img src="../../images/AquaLens-Logo.png">
+        <img src="/images/AquaLens-Logo.png" class="logo">
     </a>
     <!-- Hamburger menu (on mobile) -->
-    <img src="Hamburger_Menu_Nav_bar.png" class="menu-toggle" onclick="toggleMenu()">
+    <img src="/Hamburger_Menu_Nav_bar.png" class="menu-toggle" onclick="toggleMenu()">
 
     <div class="dropdown" id="mobileDropdown">
         <a href="../../index.html">HOME</a>
@@ -177,14 +200,19 @@
     </div>
 
         <!-- Menu items -->
-    <ul>
+    <ul id="navbarmenu">
         <li><a href="../../index.html"> HOME </a></li>
-        <li><a href="/src/product/product.html"> FEATURES </a></li>
-        <li><a href="/src/pricing/pricing.html"> PRICING </a></li>
-        <li><a href="/src/team/team.html"> ABOUT US </a></li>
-        <li><a href="/src/contact_us/contact_us.html"> CONTACT </a></li>
+        <li><a href="/../product/product.html"> FEATURES </a></li>
+        <li><a href="/../pricing/pricing.html"> PRICING </a></li>
+        <li><a href="/../team/team.html"> ABOUT US </a></li>
+        <li><a href="/../contact_us/contact_us.html"> CONTACT </a></li>
     </ul>
 </nav>
+
+<footer class="footer" id="footer">
+    <p id="copyright"> © AquaLens </p>
+    <a href="/src/contact_us/contact_us.html"> Contact </a>
+</footer>
 
 <script>
 const links = document.querySelectorAll('.navbar ul a');
