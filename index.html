@@ -51,9 +51,10 @@
             </div>
         </main>
 
-
+        <!--Cycle through images (background)-->
         <script>
-            // Go through array of background images
+
+            // Array of background images
             const heroImages = [
                 "images/Underwater.png",
                 "images/Underwater 2.webp",
@@ -63,7 +64,7 @@
 
             let current = 0;
             const heroSection = document.querySelector('.hero');
-            const changeInterval = 5000; // time between image changes (ms)
+            const changeInterval = 5000; // time in ms
 
             function changeHeroBackground() {
                 current = (current + 1) % heroImages.length;
