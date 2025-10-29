@@ -24,6 +24,7 @@ align-items: center;
 justify-content: flex-start;
 color: white;
 overflow: hidden;
+transition: background-image 1s ease-in-out;
 }
 
 /* Overlay container */
