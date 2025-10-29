@@ -8,7 +8,6 @@ html, body {
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background: linear-gradient(135deg, #e3f2fd, #bbdefb, #90caf9);
 }
 
 /* Hero section container */
@@ -31,7 +30,7 @@ html, body {
     height: 100%;
     background-size: cover;
     background-position: center;
-    background-color: #ffffff; /* Fallback color */
+    background-color: #ffffff; /* Fallback */
     transition: opacity 1.5s ease-in-out;
     z-index: 0;
 }
@@ -47,7 +46,7 @@ html, body {
     width: 30vw;
     min-width: 280px;
     height: 100vh;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgb(164, 190, 243, 0.5);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -64,7 +63,7 @@ html, body {
 .hero .content {
     width: 100%;
     max-height: calc(90vh - 60px);
-    color: rgb(3, 3, 25);
+    color: #004E7A;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -94,7 +93,7 @@ html, body {
 
 /* Button Style */
 .button-container .button {
-    background: linear-gradient(45deg, #007bff, #0056b3);
+    background: #004E7A;
     color: white;
     border: none;
     padding: 15px 30px;
@@ -118,7 +117,6 @@ html, body {
 .button-container .button:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 25px rgba(0, 123, 255, 0.5);
-    background: linear-gradient(45deg, #0056b3, #004085);
 }
 
 /* Responsive Design */
