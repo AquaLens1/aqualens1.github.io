@@ -20,20 +20,29 @@
         display: block; 
         padding-right: 40px;
     }
+
+    .footer a:hover {
+        font-weight: bold;
+    }
+
     /* Footer txt styling */
     #copyright {
         color: #004e7a;
     }
-    /*Responsive (mobile) */
+   /* Responsive (mobile) */
     @media (max-width: 768px) {
+    .footer {
+        justify-content: center; 
+        padding: 0 10px; 
+    }
 
-        .footer {
-            justify-content: center;
-        }
+    .footer a {
+        padding-right: 15px; 
+    }
     }
 
 </style>
     <footer class="footer" id="footer">
-        <p id="copyright"> © AquaLens </p>
-    <a href="/src/contact_us/contact_us.html"> Contact </a>
+        <p id="copyright"> © AquaLens</p>
+    <a href="/src/contact_us/contact_us.html"> Contact us</a>
     </footer>
