@@ -105,6 +105,20 @@
             .then(data => {
                 document.getElementById('footer-container').innerHTML = data;
             });
+        const links = document.querySelectorAll('.navbar a');
+        links.forEach(link => {
+            const linkFile = link.getAttribute('href').split('/').pop();
+            const currentFile = window.location.pathname.split('/').pop();
+
+            if (linkFile === currentFile) {
+                link.classList.add('active');
+            }
+        });
+
+        function toggleMenu() {
+            const dropdown = document.getElementById('mobileDropdown');
+            dropdown.classList.toggle('show');
+        }
 
     </script>
 </body>
