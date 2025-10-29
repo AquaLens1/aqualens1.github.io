@@ -133,11 +133,11 @@ html, body {
     }
 
     .hero h1 {
-        font-size: 2em;
+        font-size: 1em;
     }
 
     .button-container .button {
-        font-size: 16px;
+        font-size: 12px;
         padding: 12px 25px;
     }
 }
