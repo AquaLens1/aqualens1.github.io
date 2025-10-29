@@ -1,24 +1,15 @@
 <!DOCTYPE html>
-
 <html lang="en">
     <head>
-
         <meta charset="UTF-8" />
-        <!-- For size -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        
-        <!-- Link CSS stylesheet -->
         <link rel="stylesheet" href="index.css" />
-        
-        <title> AquaLens | Home</title>
-
+        <title>AquaLens | Home</title>
     </head>
-
     <body id="home-page">
 
         <!-- Navigation Bar -->
         <div id="navbar-container"></div>
-
         <script>
             // Fetch Nav bar
             fetch('nav_bar.html')
@@ -26,35 +17,29 @@
                 .then(data => {
                     document.getElementById('navbar-container').innerHTML = data;
                 });
-
-    
         </script>
 
-        <!-- Main, background image set in CSS -->
+        <!-- Main Hero Section -->
         <main class="hero">
+            <!-- Background layer for smooth transitions -->
+            <div class="hero-bg"></div>
 
             <div class="overlay">
-
-                <!-- Content for text and button -->
                 <div class="content">
-
-                    <!-- Main heading / description -->
                     <h1>
-                        Ever wondered what that cool fish you saw was? With AquaLens, you'll never have to ask yourself this question again. Our camera will tell you everything you want to know on the spot. Whether you're a marine biologist, a diver or simply an ocean lover, the AquaLens is made for you!
+                        Ever wondered what that cool fish you saw was? With AquaLens, you'll never have to ask yourself this question again. 
+                        Our camera will tell you everything you want to know on the spot. Whether you're a marine biologist, a diver or simply 
+                        an ocean lover, the AquaLens is made for you!
                     </h1>
-
-                    <!-- Button -->
                     <div class="button-container">
-                        <a href='src/product/product.html' class='button'> Discover </a>
+                        <a href="src/product/product.html" class="button">Discover</a>
                     </div>
                 </div>
             </div>
         </main>
 
-        <!--Cycle through images (background)-->
+        <!-- Background Cycling Script -->
         <script>
-
-            // Array of background images
             const heroImages = [
                 "images/Underwater.png",
                 "images/Underwater 2.webp",
@@ -63,18 +48,30 @@
             ];
 
             let current = 0;
-            const heroSection = document.querySelector('.hero');
-            const changeInterval = 5000; // time in ms
+            const heroBg = document.querySelector('.hero-bg');
+            const changeInterval = 5000; // 5 seconds
+
+            // Preload images for smooth transitions
+            heroImages.forEach(src => {
+                const img = new Image();
+                img.src = src;
+            });
+
+            // Initialize first background
+            heroBg.style.backgroundImage = `url('${heroImages[current]}')`;
 
             function changeHeroBackground() {
-                current = (current + 1) % heroImages.length;
-                heroSection.style.backgroundImage = `url('${heroImages[current]}')`;
+                heroBg.classList.add('fade-out');
+
+                setTimeout(() => {
+                    current = (current + 1) % heroImages.length;
+                    heroBg.style.backgroundImage = `url('${heroImages[current]}')`;
+                    heroBg.classList.remove('fade-out');
+                }, 1500); // matches CSS transition duration
             }
 
-            // Start cycling
             setInterval(changeHeroBackground, changeInterval);
         </script>
 
     </body>
-
 </html>
