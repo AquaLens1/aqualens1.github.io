@@ -97,6 +97,15 @@
             .then(res => res.text())
             .then(data => {
                 document.getElementById('navbar-container').innerHTML = data;
+
+                // Fix image paths for subdirectory
+                const logoImg = document.getElementById('logo-img');
+                const hamburgerImg = document.getElementById('hamburger-img');
+                const logoLink = document.querySelector('.logo');
+
+                if (logoImg) logoImg.src = '../../images/AquaLens-Logo.png';
+                if (hamburgerImg) hamburgerImg.src = '../../images/Hamburger_Menu_Nav_bar.png';
+                if (logoLink) logoLink.href = '../../index.html';
             });
 
         // Fetch footer
