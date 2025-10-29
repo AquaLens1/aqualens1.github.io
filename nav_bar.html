@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-
 <style> 
-
-
     /* Apply to all Navbar and website? */
     body{
     margin: 0px; 
@@ -21,12 +13,12 @@
     .navbar{ 
         position: sticky; /*Stays at the top*/
         top: 0;
-        height: 150px;
+        height: 100px;
         background-color: rgb(218, 231, 239);
         display: flex;
         align-items: center;
         justify-content: left;  
-        
+        z-index: 4000;
     }
 
      /* Navbar Elements styling */
@@ -49,7 +41,7 @@
     }
 
      /* Navbar title styling on hover and when active */
-    .navbar a.active, .navbar a:hover{ 
+    .navbar ul a.active, .navbar ul a:hover{ 
         background-color: #b9d5e7;
         border-radius: 15px 15px 0px 0px ;
     }
@@ -63,8 +55,9 @@
     /* Logo */
     .navbar img{ 
         margin-left: 15px;
-        width: 150px;
-        height: 150px;
+        width: 100px;
+        height: 100px;
+ 
     }
     /* Sizing of the hamburger img */
     .navbar img.menu-toggle {
@@ -73,7 +66,7 @@
         object-fit: contain;
     }
     /* No effects on hamburger toggle */
-    .menu-toggle:hover {
+    .menu-toggle:hover{
         background: none;    
         transform: none;       
     }
@@ -187,7 +180,6 @@
         <a href="src/product/product.html">FEATURES</a>
         <a href="src/pricing/pricing.html">PRICING</a>
         <a href="src/team/team.html">ABOUT US</a>
-        <a href="src/contact_us/contact_us.html">CONTACT</a>
     </div>
 
     <!-- Menu items -->
@@ -196,23 +188,9 @@
         <li><a href="src/product/product.html"> FEATURES </a></li>
         <li><a href="src/pricing/pricing.html"> PRICING </a></li>
         <li><a href="src/team/team.html"> ABOUT US </a></li>
-        <li><a href="src/contact_us/contact_us.html"> CONTACT </a></li>
     </ul>
 </nav>
-
 <script>
-const links = document.querySelectorAll('.navbar a');
-links.forEach(link => {
-    const linkFile = link.getAttribute('href').split('/').pop();
-    const currentFile = window.location.pathname.split('/').pop();
 
-    if (linkFile === currentFile) {
-        link.classList.add('active');
-    }
-    });
-
-function toggleMenu() {
-    const dropdown = document.getElementById('mobileDropdown');
-    dropdown.classList.toggle('show'); 
-    }   
+    
 </script>
