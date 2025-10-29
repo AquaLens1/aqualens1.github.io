@@ -1,20 +1,20 @@
 Overall Look and Feel of Aqualens
 ===============================
 
-PLACEHOLDER
+Ocean theme colours, with rounded edges so that evertything flows like water.
 
 Colours
 ========
 PLACEHOLDERS!
-- #FFFFFF
-- #FFFFFF
-- #FFFFFF
-- #FFFFFF
-- #FFFFFF
+- #004E7A
+- #B9D5E7
+- #FCC107
+- #87A0B2
+- #A4BEF3
 
 Iconography
 ===========
-PLACEHOLDER!
+Our icon looks like a fish combined with a camera to represent the two main components of our product.
 
 Typography
 ==========
@@ -22,8 +22,8 @@ We will be using Arial and Sans Serif from Google Fonts.
 
 Links
 =====
-PLACEHOLDER!
+
 
 Buttons
 =======
-PLACEHOLDER!
+Rounded edges and withing our colour scheme.
