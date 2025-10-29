@@ -9,6 +9,8 @@
 </head>
 
 <body>
+    <!-- Navigation Bar -->
+    <div id="navbar-container"></div>
     <h1>Prices</h1>
 
     <p class="intro-text">Meet the AquaLens, a versatile underwater camera built for everyone from beginners to
@@ -87,6 +89,38 @@
             </div>
         </div>
     </div>
+    <!-- footer -->
+    <div id="footer-container"></div>
+    <script>
+        // Fetch Nav bar
+        fetch('../../nav_bar.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('navbar-container').innerHTML = data;
+            });
+
+        // Fetch footer
+        fetch('../../footer.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+        const links = document.querySelectorAll('.navbar a');
+        links.forEach(link => {
+            const linkFile = link.getAttribute('href').split('/').pop();
+            const currentFile = window.location.pathname.split('/').pop();
+
+            if (linkFile === currentFile) {
+                link.classList.add('active');
+            }
+        });
+
+        function toggleMenu() {
+            const dropdown = document.getElementById('mobileDropdown');
+            dropdown.classList.toggle('show');
+        }
+
+    </script>
 </body>
 
 </html>
