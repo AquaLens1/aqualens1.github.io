@@ -18,7 +18,7 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 /* Background layer for fade transitions */
@@ -30,7 +30,7 @@ html, body {
     height: 100%;
     background-size: cover;
     background-position: center;
-    background-color: #ffffff; /* Fallback */
+    background-color: rgb(255, 255, 255); /* Fallback */
     transition: opacity 1.5s ease-in-out;
     z-index: 0;
 }
@@ -56,7 +56,7 @@ html, body {
     text-align: center;
     transition: width 0.3s ease;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 78, 122, 0.1);
 }
 
 /* Content */
@@ -80,7 +80,7 @@ html, body {
     font-weight: bold;
     letter-spacing: 2px;
     text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    text-shadow: 2px 2px 4px rgba(0, 78, 122, 0.1);
 }
 
 /* Button Container */
@@ -93,8 +93,8 @@ html, body {
 
 /* Button Style */
 .button-container .button {
-    background: #004E7A;
-    color: white;
+    background: rgb(0, 78, 122);
+    color: rgb(255, 255, 255);
     border: none;
     padding: 15px 30px;
     font-size: 18px;
