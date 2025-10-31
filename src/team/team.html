@@ -4,57 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Team</title>
-
     <link rel="stylesheet" href="team.css">
-    
 </head>
 <body>
-    <h1>Our Team</h1>
 
-    <div class="container">
-        <div class="team-member">
-            <div class="photo">Photo</div>
-            <span><strong>Zakaria Amara</strong> More info</span>
-        </div>
-    </div>
-    
-    <div class="container">
-        <div class="team-member">
-            <div class="photo">Photo</div>
-            <span><strong>Myriam Gallant-Blais</strong> More info</span>
-        </div>
-    </div>
+<h1>Our Team</h1>
 
-    <div class="container">
-        <div class="team-member">
-            <div class="photo">Photo</div>
-            <span><strong>Kathryn McSheffery</strong> More info</span>
+<div class="team-list">
+
+    <div class="team-card team-member">
+        <div class="photo">Photo</div>
+        <div class="member-text">
+            <div class="member-header">
+                <strong>Zakaria Amara</strong>
+                <button class="toggle" aria-expanded="false" aria-controls="info-zakaria">More info</button>
+            </div>
+            <div id="info-zakaria" class="member-info" hidden>
+                <p>Short bio or role.</p>
+            </div>
         </div>
     </div>
 
-    <div class="container">
-        <div class="team-member">
-            <div class="photo">Photo</div>
-            <span><strong>Lucas Rawle</strong> More info</span>
+    <div class="team-card team-member">
+        <div class="photo">Photo</div>
+        <div class="member-text">
+            <div class="member-header">
+                <strong>Myriam Gallant-Blais</strong>
+                <button class="toggle" aria-expanded="false" aria-controls="info-myriam">More info</button>
+            </div>
+            <div id="info-myriam" class="member-info" hidden>
+                <p>Short bio or role.</p>
+            </div>
         </div>
     </div>
 
-    <div class="container">
-        <div class="team-member">
-            <div class="photo">Photo</div>
-            <span><strong>Aditi Valmiki</strong> More info</span>
+    <div class="team-card team-member">
+        <div class="photo">Photo</div>
+        <div class="member-text">
+            <div class="member-header">
+                <strong>Kathryn McSheffery</strong>
+                <button class="toggle" aria-expanded="false" aria-controls="info-kathryn">More info</button>
+            </div>
+            <div id="info-kathryn" class="member-info" hidden>
+                <p>Short bio or role.</p>
+            </div>
         </div>
     </div>
 
-    <div class="container">
-        <div class="team-member">
-            <div class="photo">Photo</div>
-            <span><strong>Paco Situ</strong> More info</span>
+    <div class="team-card team-member">
+        <div class="photo">Photo</div>
+        <div class="member-text">
+            <div class="member-header">
+                <strong>Lucas Rawle</strong>
+                <button class="toggle" aria-expanded="false" aria-controls="info-lucas">More info</button>
+            </div>
+            <div id="info-lucas" class="member-info" hidden>
+                <p>Short bio or role.</p>
+            </div>
         </div>
     </div>
 
-   
-    
+    <div class="team-card team-member">
+        <div class="photo">Photo</div>
+        <div class="member-text">
+            <div class="member-header">
+                <strong>Paco Situ</strong>
+                <button class="toggle" aria-expanded="false" aria-controls="info-paco">More info</button>
+            </div>
+            <div id="info-paco" class="member-info" hidden>
+                <p>Short bio or role.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="team-card team-member">
+        <div class="photo">Photo</div>
+        <div class="member-text">
+            <div class="member-header">
+                <strong>Aditi Valmiki</strong>
+                <button class="toggle" aria-expanded="false" aria-controls="info-aditi">More info</button>
+            </div>
+            <div id="info-aditi" class="member-info" hidden>
+                <p>Short bio or role.</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="team.js" defer></script>
 
 </body>
 </html>
