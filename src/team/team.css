@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("images/animals-1846546_1280.jpg");
+    color: #004e7a;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+h1{
+    color: #004E7A;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.container{
+    background-color: #B9D5E7;
+    padding: 20px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+
+link {
+    color: #004E7A;
+    text-decoration: none;
+}
+
+link:hover {
+    color: #A4BEF3
+}
+
+.team-list{
+    display: grid;
+    gap: 16px;
+    padding: 0 20px;
+}
+
+.team-card{
+    background: #b9d5e7;
+    border-radius: 16px;
+    padding: 16px;
+    display:flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.team-member {
+    
+    display: flex;
+    align-items: center;
+}
+
+.member-text{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.member-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.toggle{
+    background-color: #004e7a;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    padding: 6px 10px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: 0.2s;
+
+}
+.toggle:hover {background-color: #87A0B2;}
+
+.member-info {
+    margin-top: 8px;
+    background: #B9D5E7;
+    border-radius: 12px;
+    padding: 10px;
+
+}
+
+
+
+
+.photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #87A0B2;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    color: #ffffff;
+    font-size: 14px;
+
+}
+
+@media (max-width: 600px){
+    .member-text {align-items: center; text-align: center;}
+    .member-header{ justify-content: cneter; flex-wrap: wrap;}
+    .team-member {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .photo {
+        margin-right: 0;
+        margin-bottom: 8px;
+    }
+    .team-card {
+        flex-direction:column;
+        text-align: center;
+
+    }
+    .member-header{
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
