@@ -9,32 +9,31 @@
     <body>
         <!-- Navigation Bar -->
         <div id="navbar-container"></div>
-        <script>
-            // Fetch Nav bar
-            fetch('nav_bar.html')
-                .then(res => res.text())
-                .then(data => {
-                    document.getElementById('navbar-container').innerHTML = data;
-                });
-        </script>
         
         <div class = "left-section">
             <h1>We'd love to hear from you!</h1>
             <p>Whether you have a question about our product, pricing, features or anything else, our team is more than happy to answer all of your questions!</p>
         </div>
-        
-        <div class = "contact-box">
-            <h2>Get in touch with us</h2>
 
-            <input type="text" placeholder="First Name"/>
-            <input type="text" placeholder="Last Name"/>
-
-            <input type="text" placeholder="Email Address"/>
-            <input type="text" placeholder="Type of Question"/>
-            <input type="text" placeholder="Phone Number"/>
-            <input type="text" placeholder="Additional Comments"/>
-            
+         <div class="contact-box">
+          <h2>Get in touch with us</h2>
+          
+          <div class = 'name-row'><input type="text" placeholder="First Name">
+          <input type="text" placeholder="Last Name">
+          </div>
+          
+          <input type="text" placeholder="Email Address">
+          <input type="text" placeholder="Type of Question">
+          <input type="text" placeholder="Phone Number">
+          <input id = 'submit-question' type="text" placeholder="Type in your Question">
+          <button type="submit">Submit</button>
         </div>
-
+      </main>
+    
+      <footer>
+        <p>© 2025 AquaLens</p>
+        <a href="#">Contact</a>
+      </footer>
+      <script src="contact_us.js"></script>
     </body>
 </html>
