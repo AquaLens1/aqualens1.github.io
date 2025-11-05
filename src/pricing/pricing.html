@@ -141,6 +141,15 @@
             .then(res => res.text())
             .then(data => {
                 document.getElementById('footer-container').innerHTML = data;
+
+                // Fix footer links for subdirectory
+                const footerLinks = document.querySelectorAll('.footer a');
+                footerLinks.forEach(link => {
+                    const href = link.getAttribute('href');
+                    if (href === '/src/contact_us/contact_us.html') {
+                        link.href = '../contact_us/contact_us.html';
+                    }
+                });
             });
 
         function toggleMenu() {
