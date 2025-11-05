@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', ()=>{
     const targetElement = document.getElementById('navbar-container');
     if (targetElement){
-        fetch('../nav_bar.html')
+        fetch('../../nav_bar.html')
             .then(response =>{
                 if(!response.ok){
                     throw new Error(`HTTP error! status: ${response.status}`);
@@ -16,4 +16,6 @@ document.addEventListener('DOMContentLoaded', ()=>{
                 targetElement.innerHTML= '<p>Error loading content.</p>';
             });
     }
-});
+}); 
+
+
