@@ -102,8 +102,7 @@ main {
 
 #navbar-container,
 footer {
-  background-color: #b5d6ed;
-  padding: 10px 40px;
+  background-color: rgb(218, 231, 239);
   text-align: center;
 }
 
