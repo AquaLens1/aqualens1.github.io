@@ -1,21 +1,37 @@
-document.addEventListener('DOMContentLoaded', ()=>{
-    const targetElement = document.getElementById('navbar-container');
-    if (targetElement){
+// Fetch Nav bar
         fetch('../../nav_bar.html')
-            .then(response =>{
-                if(!response.ok){
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
-                return response.text();
-            })
-            .then(html =>{
-                targetElement.innerHTML = html;
-            })
-            .catch(error =>{
-                console.error('Error fetching HTML:', error);
-                targetElement.innerHTML= '<p>Error loading content.</p>';
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('navbar-container').innerHTML = data;
+
+                // Fix image paths for subdirectory
+                const logoImg = document.getElementById('logo-img');
+                const hamburgerImg = document.getElementById('hamburger-img');
+                const logoLink = document.querySelector('.logo');
+
+                if (logoImg) logoImg.src = '/images/AquaLens-Logo.png';
+                if (hamburgerImg) hamburgerImg.src = '/images/Hamburger_Menu_Nav_bar.png';
+                if (logoLink) logoLink.href = '/index.html';
             });
-    }
-}); 
 
+        // Fetch footer
+        fetch('../../footer.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
 
+        const links = document.querySelectorAll('.navbar a');
+        links.forEach(link => {
+            const linkFile = link.getAttribute('href').split('/').pop();
+            const currentFile = window.location.pathname.split('/').pop();
+
+            if (linkFile === currentFile) {
+                link.classList.add('active');
+            }
+        });
+
+        function toggleMenu() {
+            const dropdown = document.getElementById('mobileDropdown');
+            dropdown.classList.toggle('show');
+        }   
