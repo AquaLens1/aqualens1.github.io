@@ -1,5 +1,5 @@
 .pricing-button {
-    background: linear-gradient(45deg, #007bff, #0056b3);
+    background: linear-gradient(45deg, #87A0B2, #004E7A);
     color: white;
     border: none;
     padding: 15px 30px;
@@ -7,7 +7,7 @@
     font-weight: bold;
     border-radius: 50px;
     cursor: pointer;
-    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+    box-shadow: 0 4px 15px rgba(0, 78, 122, 0.3);
     transition: all 0.3s ease;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -18,8 +18,8 @@
 
 .pricing-button:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(0, 123, 255, 0.5);
-    background: linear-gradient(45deg, #0056b3, #004085);
+    box-shadow: 0 8px 25px rgba(0, 78, 122, 0.5);
+    background: linear-gradient(45deg, #004E7A, #87A0B2);
 }
 
 .pricing-button:active {
@@ -42,17 +42,17 @@
 }
 
 .pro-button {
-    background: linear-gradient(45deg, #28a745, #1e7e34);
-    box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
+    background: linear-gradient(45deg, #004E7A, #003856);
+    box-shadow: 0 4px 15px rgba(0, 78, 122, 0.3);
 }
 
 .pro-button:hover {
-    background: linear-gradient(45deg, #1e7e34, #155724);
-    box-shadow: 0 8px 25px rgba(40, 167, 69, 0.5);
+    background: linear-gradient(45deg, #003856, #004E7A);
+    box-shadow: 0 8px 25px rgba(0, 78, 122, 0.5);
 }
 
 .ultra-button {
-    background: linear-gradient(45deg, #ffc107, #e0a800);
+    background: linear-gradient(45deg, #FCC107, #e0a800);
     color: #212529;
     box-shadow: 0 4px 15px rgba(255, 193, 7, 0.3);
 }
@@ -66,7 +66,7 @@
 /* Typography styling to match buttons */
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #e3f2fd, #bbdefb, #90caf9);
+    background: linear-gradient(135deg, #fff, #B9D5E7, #A4BEF3);
     margin: 0;
     padding: 20px;
 }
@@ -75,7 +75,7 @@ h1 {
     text-align: center;
     font-size: 3em;
     font-weight: bold;
-    background: linear-gradient(45deg, #007bff, #0056b3);
+    background: linear-gradient(45deg, #87A0B2, #004E7A);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -94,21 +94,21 @@ h2 {
 }
 
 .standard h2 {
-    background: linear-gradient(45deg, #007bff, #0056b3);
+    background: linear-gradient(45deg, #87A0B2, #004E7A);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
 .pro h2 {
-    background: linear-gradient(45deg, #28a745, #1e7e34);
+    background: linear-gradient(45deg, #004E7A, #003856);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
 .ultra h2 {
-    background: linear-gradient(45deg, #ffc107, #e0a800);
+    background: linear-gradient(45deg, #FCC107, #e0a800);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -127,17 +127,17 @@ h2 {
 }
 
 .standard .price {
-    background: linear-gradient(45deg, #007bff, #0056b3);
+    background: linear-gradient(45deg, #87A0B2, #004E7A);
     color: white;
 }
 
 .pro .price {
-    background: linear-gradient(45deg, #28a745, #1e7e34);
+    background: linear-gradient(45deg, #004E7A, #003856);
     color: white;
 }
 
 .ultra .price {
-    background: linear-gradient(45deg, #ffc107, #e0a800);
+    background: linear-gradient(45deg, #FCC107, #e0a800);
     color: #212529;
 }
 
@@ -146,7 +146,7 @@ h2 {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: #495057;
+    color: #004E7A;
     margin: 20px 0 10px 0;
 }
 
@@ -180,7 +180,7 @@ li {
     text-align: center;
     max-width: 800px;
     margin: 0 auto 40px auto;
-    color: #495057;
+    color: #004E7A;
     font-weight: 400;
 }
 
@@ -214,17 +214,17 @@ li {
 }
 
 .standard .product-image img {
-    border-color: #007bff;
-    box-shadow: 0 8px 25px rgba(0, 123, 255, 0.3);
+    border-color: #004E7A;
+    box-shadow: 0 8px 25px rgba(0, 78, 122, 0.3);
 }
 
 .pro .product-image img {
-    border-color: #28a745;
-    box-shadow: 0 8px 25px rgba(40, 167, 69, 0.3);
+    border-color: #004E7A;
+    box-shadow: 0 8px 25px rgba(0, 78, 122, 0.3);
 }
 
 .ultra .product-image img {
-    border-color: #ffc107;
+    border-color: #FCC107;
     box-shadow: 0 8px 25px rgba(255, 193, 7, 0.3);
 }
 

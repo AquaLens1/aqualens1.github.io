@@ -9,6 +9,8 @@
 </head>
 
 <body>
+    <!-- Navigation Bar -->
+    <div id="navbar-container"></div>
     <h1>Prices</h1>
 
     <p class="intro-text">Meet the AquaLens, a versatile underwater camera built for everyone from beginners to
@@ -87,6 +89,75 @@
             </div>
         </div>
     </div>
+    <!-- footer -->
+    <div id="footer-container"></div>
+    <script>
+        // Fetch Nav bar
+        fetch('../../nav_bar.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('navbar-container').innerHTML = data;
+
+                // Fix image paths for subdirectory
+                const logoImg = document.getElementById('logo-img');
+                const hamburgerImg = document.getElementById('hamburger-img');
+                const logoLink = document.querySelector('.logo');
+
+                if (logoImg) logoImg.src = '../../images/AquaLens-Logo.png';
+                if (hamburgerImg) hamburgerImg.src = '../../images/Hamburger_Menu_Nav_bar.png';
+                if (logoLink) logoLink.href = '../../index.html';
+
+                // Fix navigation links for subdirectory
+                const navLinks = document.querySelectorAll('.navbar a:not(.logo)');
+                navLinks.forEach(link => {
+                    const href = link.getAttribute('href');
+                    if (href === 'index.html') {
+                        link.href = '../../index.html';
+                    } else if (href === 'src/product/product.html') {
+                        link.href = '../product/product.html';
+                    } else if (href === 'src/pricing/pricing.html') {
+                        link.href = './pricing.html';
+                    } else if (href === 'src/team/team.html') {
+                        link.href = '../team/team.html';
+                    } else if (href === 'src/contact_us/contact_us.html') {
+                        link.href = '../contact_us/contact_us.html';
+                    }
+                });
+
+                // Set active link
+                const links = document.querySelectorAll('.navbar a');
+                links.forEach(link => {
+                    const linkFile = link.getAttribute('href').split('/').pop();
+                    const currentFile = window.location.pathname.split('/').pop();
+
+                    if (linkFile === currentFile) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+
+        // Fetch footer
+        fetch('../../footer.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+
+                // Fix footer links for subdirectory
+                const footerLinks = document.querySelectorAll('.footer a');
+                footerLinks.forEach(link => {
+                    const href = link.getAttribute('href');
+                    if (href === '/src/contact_us/contact_us.html') {
+                        link.href = '../contact_us/contact_us.html';
+                    }
+                });
+            });
+
+        function toggleMenu() {
+            const dropdown = document.getElementById('mobileDropdown');
+            dropdown.classList.toggle('show');
+        }
+
+    </script>
 </body>
 
 </html>
