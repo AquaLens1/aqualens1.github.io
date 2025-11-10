@@ -8,7 +8,7 @@ body {
 }
 
 h1{
-    color: #004E7A;
+    color: #B9D5E7;
     margin-bottom: 30px;
     text-align: center;
 }
@@ -35,14 +35,22 @@ link:hover {
     padding: 0 20px;
 }
 
-.team-card{
-    background: #b9d5e7;
+.team-card {
+    background: rgba(185, 213, 231, 0.9);
     border-radius: 16px;
-    padding: 16px;
-    display:flex;
+    padding: 16px 20px;
+    display: flex;
     align-items: center;
-    gap: 12px;
-}
+    gap: 16px;
+  
+    width: 750px;
+    max-width: 90%;
+    margin: 0 auto 25px;
+  
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  }
+  
+  
 
 .team-member {
     
@@ -50,19 +58,22 @@ link:hover {
     align-items: center;
 }
 
-.member-text{
+.member-text {
     flex: 1;
     display: flex;
     flex-direction: column;
-    
-}
-
-.member-header{
+    gap: 6px;
+  }
+  
+  .member-header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    gap: 10px;
-}
+    gap: 12px;
+  }
+  .member-header > .toggle {
+    margin-left: auto;
+  }
+  
 
 .toggle{
     background-color: #004e7a;
@@ -92,15 +103,18 @@ link:hover {
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    background-color: #87A0B2;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 10px;
-    color: #ffffff;
-    font-size: 14px;
-
-}
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  
+  .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  
 
 @media (max-width: 600px){
     .member-text {align-items: center; text-align: center;}
