@@ -1,20 +1,15 @@
-document.addEventListener('DOMcontentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
     const toggles = document.querySelectorAll('.toggle');
-    toggles.forEach(btn => {
-        btn.addEventListener('click', () => {
-            const infoId = btn.getAttribute('aria-controls');
-            const panel = document.getElementById(infoId);
-            const isOpen = btn.getAttribute('aria-expanded') ===
-
-            btn.setAttribute('aria-expanded', String(!isOpen));
-            if (isOpen) {
-                panel.hidden = true;
-                btn.textContent= 'More Info';
-            }else{
-                panel.hidden=false;
-                btn.textContent='Less Info';
-
-            }
-        });
+  
+    toggles.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const panel = document.getElementById(btn.getAttribute('aria-controls'));
+        const isOpen = btn.getAttribute('aria-expanded') === 'true';
+  
+        btn.setAttribute('aria-expanded', String(!isOpen));
+        panel.hidden = isOpen;
+        btn.textContent = isOpen ? 'More info' : 'Less info';
+      });
     });
-});
+  });
+  
