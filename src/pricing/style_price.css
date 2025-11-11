@@ -1,3 +1,12 @@
+/* Navbar styling to ensure consistent font size */
+#navbar-container .navbar a {
+    font-size: 16px;
+}
+
+#navbar-container .navbar ul a {
+    font-size: 16px;
+}
+
 .pricing-button {
     background: linear-gradient(45deg, #87A0B2, #004E7A);
     color: white;
@@ -172,7 +181,7 @@ h2 {
 
 ul {
     font-size: 1.1em;
-    line-height: 1.8;
+    line-height: 1.6;
 }
 
 li {
