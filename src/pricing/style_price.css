@@ -259,11 +259,15 @@ li {
 @media (max-width: 768px) {
     .product-content {
         flex-direction: column;
-        padding: 12px;
     }
 
     .product-image {
         flex: none;
         order: -1;
     }
+
+    .intro-text {
+        padding: 12px;
+    }
+
 }
