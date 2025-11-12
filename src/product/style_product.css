@@ -15,3 +15,10 @@ div {
     padding: 25px 10px 25px 10px;
     border-radius: 15px;
 }
+
+  #navbar-container, #footer-container {
+    background: none;
+    padding: 0;
+    border-radius: 0;
+    line-height: 1.6;
+}
