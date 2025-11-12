@@ -2,7 +2,7 @@
 AquaLens uses integrated imaging sensors and onboard AI to scan surrounding marine life in real time. As you dive, the lens tracks creatures and plants, matches them to its database, then displays the name, species classification, habitat details, and interesting facts.
 
 2. Built-in “Encyclopedia Mode”
-- Whenever AquaLens identifies an organism, you can access an encyclopedia entry that includes:
+Whenever AquaLens identifies an organism, you can access an encyclopedia entry that includes:
 - Common and scientific names
 - Typical behaviour, size, depth range
 - Whether it’s safe, potentially dangerous, or protected
@@ -17,19 +17,19 @@ For any identified organism flagged as hazardous (venomous, aggressive, endanger
 This ensures diving safety and awareness of underwater risks.
 
 4. Pressure-proof, Underwater-Optimised Hardware
-- Designed to endure deep-sea pressures, low-light conditions, and rough underwater environments:
+Designed to endure deep-sea pressures, low-light conditions, and rough underwater environments:
 - Waterproof sealed casing
 - High-sensitivity sensors for murky/low light
 - Display/interface readable under water or via dive-mask HUD
 - Rugged build for both recreational and technical dives
 
 5. Logged Dive Reports & Sharing
-- After each dive, AquaLens logs identified species, timestamps, GPS/depth location, and user notes. You can review your dive in the companion app/web portal:
+After each dive, AquaLens logs identified species, timestamps, GPS/depth location, and user notes. You can review your dive in the companion app/web portal:
 - View all species seen, marked with icons (safe, caution, endangered)
 - Export reports or share with dive-buddies and marine-biology networks
 - Filter by species, depth, location, date
 
-6. intuitive User Interface (UI) & Workflow
+6. Intuitive User Interface (UI) & Workflow
 - Simple “Scan” mode: point the device or wear it; it auto-recognises organisms
 - “Explore” mode: browse the database offline, learn ahead of your dive
 - “Safety” mode: receive alerts/notifications in real time

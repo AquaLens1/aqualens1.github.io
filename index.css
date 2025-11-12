@@ -46,7 +46,7 @@ html, body {
     width: 30vw;
     min-width: 280px;
     height: 100vh;
-    background-color: rgb(164, 190, 243, 0.5);
+    background-color: rgb(164, 190, 243, 0.3);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -63,7 +63,7 @@ html, body {
 .hero .content {
     width: 100%;
     max-height: calc(90vh - 60px);
-    color: #004E7A;
+    color: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
