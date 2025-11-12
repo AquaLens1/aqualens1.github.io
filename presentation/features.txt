@@ -43,7 +43,7 @@ Apart from species recognition, AquaLens helps you explore underwater terrain:
 - Suggests safe routes based on depth/conditions
 - Logs your path and shows your “marine life score” — how many unique species you’ve seen
 
-Why These Features Matter?:
+Why Do These Features Matter?:
 Safety + Awareness: Divers often encounter unfamiliar species; knowing what you’re looking at (and whether it’s dangerous) makes for a safer dive.
 Education & Conservation: The encyclopedia mode fosters curiosity and respect for marine ecosystems — seeing an endangered species becomes a teachable moment.
 Enhanced Diving Experience: Beyond simply swimming, you’re exploring with a smart guide that enriches the journey.
