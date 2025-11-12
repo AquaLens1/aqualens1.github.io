@@ -267,8 +267,8 @@ li {
     }
 
     .intro-text {
-        padding: 30px;
         box-sizing: border-box;
+        padding: 0px 20px 0px 20px;
     }
 
 }
