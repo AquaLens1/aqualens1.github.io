@@ -1,0 +1,30 @@
+1. Real-time Underwater Scan & Identification
+AquaLens uses integrated imaging sensors and onboard AI to scan surrounding marine life in real time. As you dive, the lens tracks creatures and plants, matches them to its database, then displays the name, species classification, habitat details, and interesting facts.
+
+2. Built-in “Encyclopedia Mode”
+- Whenever AquaLens identifies an organism, you can access an encyclopedia entry that includes:
+- Common and scientific names
+- Typical behaviour, size, depth range
+- Whether it’s safe, potentially dangerous, or protected
+- Interaction guidelines (e.g., “keep 2 m away”, “do not touch”, “photograph only”)
+- Conservation status and interesting facts
+
+3. Danger & Safety Alerts
+For any identified organism flagged as hazardous (venomous, aggressive, endangered, etc), AquaLens gives immediate visual/audio alert:
+- “Caution: Lionfish detected – venomous spines”
+- “Endangered coral species – do not touch or anchor here”
+- “Large predator nearby – maintain safe distance”
+This ensures diving safety and awareness of underwater risks.
+
+4. Pressure-proof, Underwater-Optimised Hardware
+- Designed to endure deep-sea pressures, low-light conditions, and rough underwater environments:
+- Waterproof sealed casing
+- High-sensitivity sensors for murky/low light
+- Display/interface readable under water or via dive-mask HUD
+- Rugged build for both recreational and technical dives
+
+5. Logged Dive Reports & Sharing
+- After each dive, AquaLens logs identified species, timestamps, GPS/depth location, and user notes. You can review your dive in the companion app/web portal:
+View all species seen, marked with icons (safe, caution, endangered)
+Export reports or share with dive-buddies and marine-biology networks
+Filter by species, depth, location, date

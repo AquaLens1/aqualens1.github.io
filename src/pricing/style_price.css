@@ -1,3 +1,12 @@
+/* Navbar styling to ensure consistent font size */
+#navbar-container .navbar a {
+    font-size: 16px;
+}
+
+#navbar-container .navbar ul a {
+    font-size: 16px;
+}
+
 .pricing-button {
     background: linear-gradient(45deg, #87A0B2, #004E7A);
     color: white;
@@ -64,12 +73,17 @@
 }
 
 /* Typography styling to match buttons */
+html,
 body {
     font-family: 'Arial', sans-serif;
     background: linear-gradient(135deg, #fff, #B9D5E7, #A4BEF3);
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
+
 
 h1 {
     text-align: center;
@@ -81,6 +95,7 @@ h1 {
     background-clip: text;
     text-transform: uppercase;
     letter-spacing: 2px;
+    margin-top: 30 px;
     margin-bottom: 30px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -166,11 +181,11 @@ h2 {
 
 ul {
     font-size: 1.1em;
-    line-height: 1.8;
+    line-height: 1.6;
 }
 
 li {
-    margin: 8px 0;
+    margin: 0px 0;
     font-weight: 500;
 }
 
@@ -233,6 +248,14 @@ li {
     box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
 }
 
+/* Fix active link */
+#navbar-container .navbar ul a.active {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 15px;
+}
+
 @media (max-width: 768px) {
     .product-content {
         flex-direction: column;
@@ -242,4 +265,10 @@ li {
         flex: none;
         order: -1;
     }
+
+    .intro-text {
+        padding: 12px;
+        box-sizing: border-box;
+    }
+
 }

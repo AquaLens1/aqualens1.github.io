@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AquaLens Pricing</title>
     <link rel="stylesheet" href="style_price.css">
+    <link rel="icon" type="image/png" href="aqualens1.github.io/images/favicon-32x32.png">
 </head>
 
 <body>
@@ -30,8 +31,8 @@
                     <li>Waterproof up to 30m</li>
                 </ul>
                 <div>
-                    <button class="pricing-button"
-                        onclick="window.location.href='https://www.example.com/buy-aqualens-standard'">Buy Now</button>
+                    <button class="pricing-button" onclick="window.location.href='../contact_us/contact_us.html'">Buy
+                        Now</button>
                 </div>
             </div>
             <div class="product-image">
@@ -54,7 +55,7 @@
                 </ul>
                 <div>
                     <button class="pricing-button pro-button"
-                        onclick="window.location.href='https://www.example.com/buy-aqualens-pro'">Buy Now</button>
+                        onclick="window.location.href='../contact_us/contact_us.html'">Buy Now</button>
                 </div>
             </div>
             <div class="product-image">
@@ -80,7 +81,7 @@
                 </ul>
                 <div>
                     <button class="pricing-button ultra-button"
-                        onclick="window.location.href='https://www.example.com/buy-aqualens-ultra'">Buy Now</button>
+                        onclick="window.location.href='../contact_us/contact_us.html'">Buy Now</button>
                 </div>
             </div>
             <div class="product-image">
@@ -91,73 +92,8 @@
     </div>
     <!-- footer -->
     <div id="footer-container"></div>
-    <script>
-        // Fetch Nav bar
-        fetch('../../nav_bar.html')
-            .then(res => res.text())
-            .then(data => {
-                document.getElementById('navbar-container').innerHTML = data;
 
-                // Fix image paths for subdirectory
-                const logoImg = document.getElementById('logo-img');
-                const hamburgerImg = document.getElementById('hamburger-img');
-                const logoLink = document.querySelector('.logo');
-
-                if (logoImg) logoImg.src = '../../images/AquaLens-Logo.png';
-                if (hamburgerImg) hamburgerImg.src = '../../images/Hamburger_Menu_Nav_bar.png';
-                if (logoLink) logoLink.href = '../../index.html';
-
-                // Fix navigation links for subdirectory
-                const navLinks = document.querySelectorAll('.navbar a:not(.logo)');
-                navLinks.forEach(link => {
-                    const href = link.getAttribute('href');
-                    if (href === 'index.html') {
-                        link.href = '../../index.html';
-                    } else if (href === 'src/product/product.html') {
-                        link.href = '../product/product.html';
-                    } else if (href === 'src/pricing/pricing.html') {
-                        link.href = './pricing.html';
-                    } else if (href === 'src/team/team.html') {
-                        link.href = '../team/team.html';
-                    } else if (href === 'src/contact_us/contact_us.html') {
-                        link.href = '../contact_us/contact_us.html';
-                    }
-                });
-
-                // Set active link
-                const links = document.querySelectorAll('.navbar a');
-                links.forEach(link => {
-                    const linkFile = link.getAttribute('href').split('/').pop();
-                    const currentFile = window.location.pathname.split('/').pop();
-
-                    if (linkFile === currentFile) {
-                        link.classList.add('active');
-                    }
-                });
-            });
-
-        // Fetch footer
-        fetch('../../footer.html')
-            .then(res => res.text())
-            .then(data => {
-                document.getElementById('footer-container').innerHTML = data;
-
-                // Fix footer links for subdirectory
-                const footerLinks = document.querySelectorAll('.footer a');
-                footerLinks.forEach(link => {
-                    const href = link.getAttribute('href');
-                    if (href === '/src/contact_us/contact_us.html') {
-                        link.href = '../contact_us/contact_us.html';
-                    }
-                });
-            });
-
-        function toggleMenu() {
-            const dropdown = document.getElementById('mobileDropdown');
-            dropdown.classList.toggle('show');
-        }
-
-    </script>
+    <script src="pricing.js" defer></script>
 </body>
 
 </html>
