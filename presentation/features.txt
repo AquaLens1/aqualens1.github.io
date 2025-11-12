@@ -25,6 +25,26 @@ This ensures diving safety and awareness of underwater risks.
 
 5. Logged Dive Reports & Sharing
 - After each dive, AquaLens logs identified species, timestamps, GPS/depth location, and user notes. You can review your dive in the companion app/web portal:
-View all species seen, marked with icons (safe, caution, endangered)
-Export reports or share with dive-buddies and marine-biology networks
-Filter by species, depth, location, date
+- View all species seen, marked with icons (safe, caution, endangered)
+- Export reports or share with dive-buddies and marine-biology networks
+- Filter by species, depth, location, date
+
+6. intuitive User Interface (UI) & Workflow
+- Simple “Scan” mode: point the device or wear it; it auto-recognises organisms
+- “Explore” mode: browse the database offline, learn ahead of your dive
+- “Safety” mode: receive alerts/notifications in real time
+
+7. Expandable Database & Offline Mode
+Because underwater internet may not be available, AquaLens comes with a large built-in species database and supports offline updates when connected. Over time you can download regional “packs” (e.g., Caribbean reef, Pacific kelp forest, deep-sea habitats) so the device stays relevant worldwide.
+
+8. Dive-Assisted Navigation & Discovery
+Apart from species recognition, AquaLens helps you explore underwater terrain:
+- Highlights interesting features: coral formations, shipwrecks, marine life hotspots
+- Suggests safe routes based on depth/conditions
+- Logs your path and shows your “marine life score” — how many unique species you’ve seen
+
+Why These Features Matter?:
+Safety + Awareness: Divers often encounter unfamiliar species; knowing what you’re looking at (and whether it’s dangerous) makes for a safer dive.
+Education & Conservation: The encyclopedia mode fosters curiosity and respect for marine ecosystems — seeing an endangered species becomes a teachable moment.
+Enhanced Diving Experience: Beyond simply swimming, you’re exploring with a smart guide that enriches the journey.
+Data-Driven Exploration: Logging dives and species turns each outing into a record of progress, discovery, and contribution (to your own logs or wider community).
