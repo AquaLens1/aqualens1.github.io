@@ -267,8 +267,8 @@ li {
     }
 
     .intro-text {
-        padding: 12px;
-        flex-direction: column;
+        box-sizing: border-box;
+        padding: 0px 30px 0px 30px;
     }
 
 }
