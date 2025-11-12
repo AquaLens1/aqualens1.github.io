@@ -29,7 +29,7 @@ After each dive, AquaLens logs identified species, timestamps, GPS/depth locatio
 - Export reports or share with dive-buddies and marine-biology networks
 - Filter by species, depth, location, date
 
-6. intuitive User Interface (UI) & Workflow
+6. Intuitive User Interface (UI) & Workflow
 - Simple “Scan” mode: point the device or wear it; it auto-recognises organisms
 - “Explore” mode: browse the database offline, learn ahead of your dive
 - “Safety” mode: receive alerts/notifications in real time
