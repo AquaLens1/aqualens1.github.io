@@ -1,1 +1,10 @@
-Aqualens is a 
+1. Real-time Underwater Scan & Identification
+AquaLens uses integrated imaging sensors and onboard AI to scan surrounding marine life in real time. As you dive, the lens tracks creatures and plants, matches them to its database, then displays the name, species classification, habitat details, and interesting facts.
+
+2. Built-in “Encyclopedia Mode”
+- Whenever AquaLens identifies an organism, you can access an encyclopedia entry that includes:
+- Common and scientific names
+- Typical behaviour, size, depth range
+- Whether it’s safe, potentially dangerous, or protected
+Interaction guidelines (e.g., “keep 2 m away”, “do not touch”, “photograph only”)
+Conservation status and interesting facts
