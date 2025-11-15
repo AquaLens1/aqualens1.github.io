@@ -10,6 +10,13 @@ h1,h2{
     font-family: "Monace", monospace;
 }
 
+body {
+  background-image: url('../../images/Underwater3.webp');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 div {
     background-color: rgba(255, 255, 255, 0.5);
     padding: 25px 10px 25px 10px;
