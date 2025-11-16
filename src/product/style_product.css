@@ -29,3 +29,7 @@ div {
     border-radius: 0;
     line-height: 1.6;
 }
+
+#copyright {
+  font-family: Arial, Helvetica, sans-serif;
+}
