@@ -37,3 +37,43 @@
         }   
 
 
+document.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById("contact-form");
+
+    // Create a container for success messages
+    const successMessage = document.createElement("p");
+    successMessage.style.color = "lightgreen";
+    successMessage.style.marginTop = "10px";
+    successMessage.style.fontWeight = "bold";
+    form.appendChild(successMessage);
+
+    form.addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent page reload
+
+        // Collect form values
+        const formData = {
+            firstName: form.firstName.value,
+            lastName: form.lastName.value,
+            email: form.email.value,
+            questionType: form.questionType.value,
+            phone: form.phone.value,
+            message: form.message.value
+        };
+
+        // Log data to console (for testing)
+        console.log("Form submitted:", formData);
+
+        // Display success message on page
+        successMessage.textContent = "Thank you! Your message has been submitted.";
+
+        // Optional: clear form after submission
+        form.reset();
+
+        // Remove success message after 5 seconds
+        setTimeout(() => {
+            successMessage.textContent = "";
+        }, 5000);
+    });
+});
+
+

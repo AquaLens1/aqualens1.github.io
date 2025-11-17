@@ -128,3 +128,70 @@ footer {
     main {
         flex: 1;
     }
+
+/* Tablets & small screens */
+@media (max-width: 1024px) {
+  main {
+    padding: 30px 40px;
+  }
+
+  .left-section,
+  .contact-box {
+    width: 50%;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    padding: 20px;
+  }
+
+  .left-section,
+  .contact-box {
+    width: 100%;
+  }
+
+  .contact-box {
+    padding: 25px;
+  }
+
+  .name-row {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .name-row input {
+    width: 100%;
+  }
+
+  .contact-box input {
+    width: 100%;
+  }
+
+  .contact-box button {
+    width: 60%;
+  }
+
+  .left-section h1 {
+    font-size: 20px;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 480px) {
+  .contact-box button {
+    width: 80%;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  .left-section {
+    padding: 20px;
+  }
+}

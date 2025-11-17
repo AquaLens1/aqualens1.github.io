@@ -26,17 +26,20 @@
       <div class="contact-box">
         <h2>Get in touch with us</h2>
 
-        <div class="name-row">
-          <input type="text" placeholder="First Name">
-          <input type="text" placeholder="Last Name">
-        </div>
+        <form id = 'contact-form'>
+          <div class="name-row">
+            <input name = "firstName" type="text" placeholder="First Name" required>
+            <input name = "lastName" type="text" placeholder="Last Name" required>
+          </div>
 
-        <input type="text" placeholder="Email Address">
-        <input type="text" placeholder="Type of Question">
-        <input type="text" placeholder="Phone Number">
-        <input id="submit-question" type="text" placeholder="Type in your Question">
+          <input name = "email" type="email" placeholder="Email Address" required>
+          <input name = "questionType" type="text" placeholder="Type of Question" required>
+          <input name = "phone" type="text" placeholder="Phone Number">
+          <textarea id="submit-question" name  = "message" type="text" placeholder="Type in your Question" required>
 
-        <button type="submit">Submit</button>
+          <button type="submit">Submit</button>
+
+        </form>
       </div>
     </main>
 
